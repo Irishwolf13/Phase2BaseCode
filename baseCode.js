@@ -6,14 +6,14 @@ import { useState, useEffect } from "react"     // Standard useState and useEffe
 const [variable, setterForVariable] = useState('Variable default State');
 
 // Standard UseEffect that only grabs JSON when first loaded because of the [] second argument
-// AND preforms a Fetch GET Request
+// AND preforms a Fetch GET Request (ASSUMING JSON server running on localhost:3001)
 useEffect(() => {
     fetch('http://localhost:3001/WhatToGet')
     .then(res => res.json())
     .then(rawData => console.log(rawData))
 },[])
 
-//Standard Post Request
+//Standard Post Request (ASSUMING JSON server running on localhost:3001)
 fetch("http://localhost:3001/WhereToPOST", {
     method: "POST",
     headers: {
@@ -24,7 +24,7 @@ fetch("http://localhost:3001/WhereToPOST", {
 .then(res => res.json())                        // This .then is to check it worked properly
 .then(returnData => console.log(returnData))    // This .then console logs the response so we can see it worked
 
-//Standard PATCH Request
+//Standard PATCH Request (ASSUMING JSON server running on localhost:3001)
 fetch("http://localhost:3001/WhereToPOST/SpecificItem", {
     method: "PATCH",
     headers: {
