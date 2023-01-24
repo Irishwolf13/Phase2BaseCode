@@ -1,6 +1,6 @@
 // Two lines below can be combined: import React, { useState, useEffect } from "react";
 import React from "react";                      // Standard Import of React
-import { useState, useEffect } from "react"     // Standard useState and useEffect import from React
+import { useState, useEffect } from "react";     // Standard useState and useEffect import from React
 
 // Standard useState
 const [variable, setterForVariable] = useState('Variable default State');
