@@ -1,1 +1,0 @@
-curl -d '{"refreshtoken":"Y0s76GnBEvQZGY4YsIuWXtIxaPTIBTHbzTiBo7p61Yqf7lIqnUlHVcLVp9jRkgzu"}' -H "Content-Type: application/json" -X POST https://api.chartmetric.com/api/token | jq
