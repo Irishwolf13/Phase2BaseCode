@@ -1,1 +1,0 @@
-curl -o musicStats.json -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzA2MDA1NSwidGltZXN0YW1wIjoxNjc0NTI5NDQzNzgxLCJpYXQiOjE2NzQ1Mjk0NDMsImV4cCI6MTY3NDUzMzA0M30.vs0eUpo7nfLoiZaqo2Oz7KwlRrSK7aTtYxa4Tm3A-eE' 'https://api.chartmetric.com/api/charts/applemusic/tracks?date=2023-01-01&country_code=US&type=top&genre=Pop&offset=0'
